@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 isInstalled=$(pacman -Q | grep dwm | awk '{ print $1}')
 if [ $isInstalled = 'dwm' ]; then
     echo 'dwm installed detected';
@@ -8,12 +10,12 @@ echo 'dwm installing'
 cd dwm && ./install-dwm.sh; cd -
 
 #dmenu installation section
-echo '\n\n\n\ndmenu installing'
+echo "\n\n\n\ndmenu installing"
 cd dmenu && ./install-dmenu.sh; cd -
 
 
 #dstatus installation section
-echo '\n\n\n\n installing dwm status/infos'
+echo "\n\n\n\n installing dwm status/infos"
 sudo cp ./dstatus/* /usr/local/bin/
 
 #some important dependency
