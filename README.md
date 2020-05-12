@@ -1,3 +1,4 @@
+
 # SuckLess-Packs
 
 
@@ -6,12 +7,13 @@
 [TOC]
 
 ##ScreenShots
-![](https://imgur.com/hagHHpH)
-![](https://imgur.com/ldHrxzT)
-![](https://imgur.com/earKqCP)
-![](https://imgur.com/1XniTrC)
+![Imgur](https://i.imgur.com/earKqCP.png)
 
+![Imgur](https://i.imgur.com/hagHHpH.png)
 
+![Imgur](https://i.imgur.com/ldHrxzT.png)
+
+![Imgur](https://i.imgur.com/1XniTrC.png)
 
 ##what is SuckLess-Packs?
 SuckLess-Packs is a collection of suckless softwares which can be install with single script.
