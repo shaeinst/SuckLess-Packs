@@ -1,0 +1,26 @@
+super + j/k => move between windows
+super + l/h => increase/decrease window width
+super + shift + j+k => move to/from master window
+
+super + space => move selected window to master window and vice versa
+super + z	=> increase gap between window
+super + shift + z => decrease gap between window
+super + [1,2,3,4,5,6,7,8,9] => go to respected workspace
+super + 0 => show all opened window on same screen
+super + shift + [1,2,3,4,5,6,7,8,9] => move selected window to respective workspace
+
+
+
+super + b => hide status bar
+
+super + x => lock screen
+super + shift + x => poweroff
+super + ctrl + x => logout
+super + ctrl + shift => reboot
+super + backspace    => reboot
+
+super + m => increase master window
+super + shift + m => decrease master windwo
+
+
+super + [t,u,i] => 

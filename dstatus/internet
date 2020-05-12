@@ -1,0 +1,19 @@
+#!/bin/sh
+
+
+#unicode icons ❌ 🌐 📡   📶
+
+case $BLOCK_BUTTON in
+	1) $TERMINAL -e nmtui ;;
+	3) pgrep -x dunst >/dev/null && notify-send "🌐 Internet module" "\- Click to connect
+❌: no wifi connection
+📶: wifi connection with quality
+❌: no ethernet
+🌐: ethernet working
+" ;;
+esac
+CONNAME=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -c 5- | awk '{print substr($0,1,6)}')
+[ "$(cat /sys/class/net/w*/operstate)" = 'down' ] && wifiicon="📡" ||
+	wifiicon=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) "%" }')
+
+printf " %s %s\n" "$CONNAME""..""$wifiicon" "$(sed "s/down//;s/up/🌐/" /sys/class/net/e*/operstate)"

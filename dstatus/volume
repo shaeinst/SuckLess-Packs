@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#icons options =>     墳 奄 奔 ﱜ ﱝ 婢 ﱛ 
+
+volstat="$(pamixer --get-volume-human | grep -o '[0-9]*')"
+
+vol=$volstat
+
+icon="🔊"
+if [ "$vol" = '0' ]; then
+    icon="🔈"
+fi
+if [ "$vol" = '' ]; then
+    icon="🔇"
+    vol=$volstat
+fi
+# if [ "$vol" -gt "70%" ]; then
+# 	icon="🔊"
+# elif [ "$vol" -lt "30%" ]; then
+# 	icon="🔈"
+# else
+# 	icon="🔉"
+# fi
+
+printf " %s%% \\n" "$icon""$vol"

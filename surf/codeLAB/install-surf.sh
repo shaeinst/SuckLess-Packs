@@ -1,0 +1,1 @@
+sudo rm -r surf-2.0.tar.gz surf-git-2.0-1-x86_64.pkg.tar.gz src pkg ; tar -czvf surf-2.0.tar.gz configs-surf && makepkg && sudo pacman -U surf-git-2.0-1-x86_64.pkg.tar.gz && sudo rm surf-2.0.tar.gz surf-git-2.0-1-x86_64.pkg.tar.gz src pkg -r ; echo "installed/updated"
